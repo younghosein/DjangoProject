@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html dir="rtl">
+
+  <head>
+
+      <meta charset="UTF-8" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <style>
+
+          * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+
+          }
+
+          body {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              min-height: 100vh;
+              gap: 30px;
+              background: #e9e8ee;
+
+          }
+
+          .inputBox {
+              position: relative;
+              width: 250px;
+
+          }
+
+          .inputBox input {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid rgba(116, 116, 116, 0.575);
+              outline: none;
+              background-color: #e9e8ee;
+              border-radius: 5px;
+              font-size: 1.2rem;
+              transition: 0.5s;
+
+          }
+
+          .inputBox span {
+              position: absolute;
+              right: 0;
+              padding: 5px 10px;
+              pointer-events: none;
+              color: rgba(116, 116, 116, 0.746);
+              font-size: 1.5rem;
+              margin-top: 5px;
+              display: inline-block;
+              transition: 0.5s;
+
+          }
+
+          .inputBox input:valid ~ span,
+
+          .inputBox input:focus ~ span {
+              color: rgb(0, 10, 95);
+              transform: translateX(-10px) translateY(-7px);
+              font-size: 1.2rem;
+              margin-top: -10px;
+              padding: 0px 10px;
+              background-color: #e9e8ee;
+              border-left: 1px solid rgb(0, 10, 95);
+              border-right: 1px solid rgb(0, 10, 95);
+
+          }
+
+          .inputBox input:valid,
+
+          .inputBox input:focus {
+              border: 1px solid rgb(0, 10, 95);
+
+          }
+
+      </style>
+
+      <title>testIFA</title>
+
+  </head>
+
+  <body>
+
+    <div class="inputBox">
+
+        <input type="text" name="" id="" required />
+
+        <span>اسمش</span>
+
+    </div>
+
+    <div class="inputBox">
+
+        <input type="text" name="" id="" required />
+
+        <span>نیک نیمش</span>
+    </div>
+
+  </body>
+
+</html>
